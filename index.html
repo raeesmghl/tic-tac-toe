@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="before-game">
+        <div class="player-1 players">
+            <label for="player-1-name">player 1 : </label><input type="text" id="player-1-name">
+        </div>
+        <div class="player-2 players">
+            <label for="player-2-name">player 2 : </label><input type="text" id="player-2-name">
+        </div>
+
+        <div class="rules">
+            <p><i class="ri-circle-line"></i>Player 1 always starts first.</p>
+            <p><i class="ri-circle-line"></i>Player 1 uses the sign "X".</p>
+            <p><i class="ri-circle-line"></i>Player 2 uses the sign "O".</p>
+            <p><i class="ri-circle-line"></i>Players take turns to place their signs in the 3x3 grid.</p>
+            <p><i class="ri-circle-line"></i>The first player to align three signs horizontally, vertically, or
+                diagonally wins the game.</p>
+            <p><i class="ri-circle-line"></i>If all nine cells are filled without a winner, the game is a draw.</p>
+        </div>
+        <button type="button" id="lets-play">play</button>
+    </div>
+
+
+    <div class="winner-box">
+        <div class="winner-sign">X</div>
+        <div class="winner-announce"><span class="winner-name">Raees</span> won the game</div>
+
+        <button type="button" id="play-again">play again</button>
+
+    </div>
+
+
+
+    <div class="insites">
+        <div class="player-one-insites players-insites">0</div>
+
+        <div class="player-two-insites players-insites">0</div>
+
+    </div>
+
+    <!-- <p class="whose-turn">Raees muughal's turn</p> -->
+    <div class="game">
+        <div id="row-1">
+            <button type="button" class="one box"></button>
+            <button type="button" class="two box"></button>
+            <button type="button" class="three box"></button>
+        </div>
+        <div id="row-2">
+            <button type="button" class="four box"></button>
+            <button type="button" class="five box"></button>
+            <button type="button" class="six box"></button>
+        </div>
+        <div id="row-3">
+            <button type="button" class="seven box"></button>
+            <button type="button" class="eight box"></button>
+            <button type="button" class="nine box"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
