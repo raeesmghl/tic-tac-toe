@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+
+
+
+:root{
+    --green : #72FA93;
+    --blue : #9AC1F0;
+    --dark : #14142B;
+    --white : #ffffff;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Audiowide", sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15vmin;
+}
+
+
+
+.before-game{
+    height: 80vmin;
+    width: 60vmin;
+    background-color: var(--white);
+    color: var(--green);
+    position: absolute;
+    border-radius: 3vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+    transition: .5s;
+    z-index: 9999;
+    /* display: none; */
+}
+
+
+.players{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    font-size: 4vmin;
+}
+
+
+.rules{
+    
+    padding: 4vmin;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 2vmin;
+}
+.rules>p{
+    font-size: 2vmin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    color: black;
+    display: flex;
+    gap: 2vmin;
+}
+i.ri-circle-line{
+    color: var(--green);
+}
+
+
+
+.before-game input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 4vmin;
+    font-weight: lighter;
+    width: 50%;
+}
+
+.before-game button{
+    font-size: 4vmin;
+    padding: 1vmin 18vmin;
+    border: none;
+    outline: none;
+    border-radius: 20vmin;
+    background-color: var(--green   );
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+.game{
+    width: 60vmin;
+    height: 60vmin;
+    background-color: var(--green);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 2vmin; */
+}
+
+.game>div{
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2vmin; */
+}
+
+.game button{
+    height: 19vmin;
+    width: 19vmin;
+    background-color: var(--dark);
+    border: none;
+    outline: none;
+    font-size: 8vmin;
+    color: var(--blue);
+}
+
+
+
+
+.insites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insites>.players-insites{
+    height: 20vmin;
+    width: 20vmin;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: var(--dark);
+}
+
+
+
+.player-one-insites{
+    background-color: var(--blue);
+}
+
+
+
+.player-two-insites{
+    background-color: var(--green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .whose-turn{
+    position: absolute;
+    background-color: var(--white);
+    font-size: 3vmin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    
+    padding: 2vmin 5vmin;
+    top: 5%;
+    left: 5%;
+    display: none;
+}
+.whose-turn::after{
+    content: '';
+    height: .8vmin;
+    background-color: var(--green);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    animation-name: theLine;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+}
+
+.whose-turn:hover::after{
+    width: 100%;
+}
+
+@keyframes theLine {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+.winner-box{
+    position: absolute;
+    z-index: 9999;
+
+
+    background-color: var(--white);
+    color: var(--dark);
+
+
+    max-width: 50vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+
+    padding: 5vmin;
+
+    border-radius: 3vmin;
+
+
+    scale: 0;
+    transition: .5s;
+}
+
+.winner-box>.winner-sign{
+    font-size: 15vmin;
+    color: var(--green);
+}
+
+.winner-box>.winner-announce{
+    font-size: 3vmin;
+    color: black;
+}
+
+.winner-box>#play-again{
+    font-size: 4vmin;
+    /* width: 100%; */
+    padding: 1vmin 5vmin;
+    border-radius: 50vmin;
+    border: none;
+    outline: none;
+    background-color: var(--green);
+    color: var(--white);
+}
